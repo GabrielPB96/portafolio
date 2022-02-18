@@ -18,11 +18,11 @@
 				</div>
 				<nav class="menu">
 					<ul>
-						<li><a href="#container-home"><img src="./assets/iconos/home.png" alt="home"> Home</a></li>
-						<li><a href="#container-about"><img src="./assets/iconos/user.png" alt=""> About</a></li>
-						<li><a href="#container-skills"><img src="./assets/iconos/skills.png" alt=""> Skills</a></li>
-						<li><a href="#container-works"><img src="./assets/iconos/freelance.png" alt=""> Works</a></li>
-						<li><a href="#container-contact"><img src="./assets/iconos/phone.png" alt=""> Contact</a></li>
+						<li class="li-menu"><a href="#container-home"    class="links-menu"><img src="./assets/iconos/home.png" alt="home"> Home</a></li>
+						<li class="li-menu"><a href="#container-about"   class="links-menu"><img src="./assets/iconos/user.png" alt=""> About</a></li>
+						<li class="li-menu"><a href="#container-skills"  class="links-menu"><img src="./assets/iconos/skills.png" alt=""> Skills</a></li>
+						<li class="li-menu"><a href="#container-works"   class="links-menu"><img src="./assets/iconos/freelance.png" alt=""> Works</a></li>
+						<li class="li-menu"><a href="#container-contact" class="links-menu"> <img src="./assets/iconos/phone.png" alt=""> Contact</a></li>
 					</ul>
 				</nav>
 				<div class="redes-sociales">
@@ -114,12 +114,40 @@
 			<div class="container-contact" id="container-contact">
 				<div class="contact" id="contact">
 					<h2>Contact<div></div></h2>
-					<form>
-						<input type="tel"/>
-						<input type="email" />
-						<input type="text">
-						<textarea rows="5"></textarea>
-					</form>
+					<div class="container-campos-form">
+						<div class="contact-info" id="contact-info">
+							<div class="phone-contact">
+								<img src="./assets/iconos/phone.png" alt="">
+								<p class="parrafo-info">
+									<span>Phone</span>
+									+591 72290174
+								</p>
+							</div>
+							
+							<div class="sms-contact">
+								<img src="./assets/iconos/sms3.png" alt="">
+								<p class="parrafo-info">
+									<span>Email address</span>
+									gabrieljuniorpb990@gmail.com
+								</p>
+							</div>
+
+							<div class="location-contact">
+								<img src="./assets/iconos/location3.png" alt="">
+								<p class="parrafo-info">
+									<span>Location</span>
+									Cochabamba
+								</p>
+							</div>
+						</div>
+						<form>
+							<input type="text" placeholder="Your Name" class="your-name"/>
+							<input type="email" placeholder="Email address" class="your-email"/>
+							<input type="text" placeholder="Subject" class="your-subject">
+							<textarea rows="5" class="your-motivo"></textarea>
+							<input type="submit" value="Send Message" class="btn-send">
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>

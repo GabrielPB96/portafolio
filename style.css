@@ -3,8 +3,10 @@
 }
 
 body{
+	margin: 0px;
 	background-color: #F6F7FF;
 	font-family: 'Times New Roman', Times, serif;
+	transition: all .3s ease;
 }
 
 .name{
@@ -16,11 +18,10 @@ body{
 	display: flex;
 	justify-content: stretch;
 	margin: auto;
-	/* background-color: #dc3545;*/
+	/* background-color: #dc3545; */
 }
 
 .container-nav{
-	margin-top:30px;
 	padding-right: 25px;
 	/* background-color: aqua; */
 }
@@ -41,23 +42,37 @@ body{
 	list-style: none;
 	padding: 0px;
 }
-.nav ul li{
+.li-menu{
 	margin-top: 20px;
 	position: relative;
+	/* background-color: #dc3545; */
+	
+	cursor: pointer;
 }
 
-.nav ul li a:hover{
-	margin-left: 10px;
+.li-menu:hover > a{
+	transform: translateX(10px);
+	background-color: rgba(0, 0, 0, .1);
 }
-.nav ul li a{
+.links-menu{
+	padding: 5px;
 	text-decoration: none;
 	color: white;
-	transition: margin-left .3s ease;
+}
+
+.li-menu a{
+	display: block;
+	transition: transform .3s ease;
+}
+
+.li-menu img{
+	/* filter: invert(1); */
 }
 
 .main{
 	display: flex;
 	flex-direction: column;
+	transition: ease-in-out;
 }
 
 .container-home,
@@ -87,7 +102,10 @@ body{
 	font-size: 50px;
 }
 
-.about, .skills, .works, .contact{
+.about,
+.skills,
+.works,
+.contact{
 	border-radius: 20px;
 	background-color: #fff;
 	box-shadow: -2px 2px 2px rgba(0, 0, 0, .3);
@@ -96,6 +114,10 @@ body{
 .skills{
 	color: #ffff;
 	background-color: #4A63E7;
+}
+.contact{
+	color: white;
+	background-color: rgb(89, 53, 220);
 }
 
 .about h2,
@@ -108,12 +130,19 @@ body{
 
 .about h2 div,
 .skills h2 div,
-.works h2 div,
-.contact h2 div{
+.works h2 div{
 	margin-top: 7px;
 	width: 30px;
 	height: 5px;
 	background-color: #dc3545;
+	border: none;
+	border-radius: 10px;
+}
+.contact h2 div{
+	margin-top: 7px;
+	width: 30px;
+	height: 5px;
+	background-color: #4A63E7;
 	border: none;
 	border-radius: 10px;
 }
@@ -138,6 +167,7 @@ body{
 	justify-content: space-around;
 	width: 100%;
 	margin-left: 0px;
+	margin-top: 30px;
 	/* background-color: #dc3545; */
 }
 .redes-sociales img{
@@ -182,4 +212,98 @@ ul img{
 	align-items: flex-end;
 	padding: 15px;
 	margin-right: 30px;
+}
+
+.contact-info img{
+	width: 30px;
+	height: 30px;
+}
+
+.contact-info{
+	display: flex;
+	flex-direction: column;
+	filter: drop-shadow(0px 0 0 #dc3545);
+	overflow: hidden;
+}
+
+.container-campos-form{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+
+.phone-contact,
+.sms-contact,
+.location-contact{
+	display: flex;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+
+.parrafo-info span{
+	display: block;
+	font-size: 20px;
+	color: #faf9f9;
+}
+
+.parrafo-info{
+	color: rgb(150, 140, 140);
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 15px;
+	/* background-color: #dc3545; */
+}
+
+form{
+	padding: 10px 0px 10px 10px;
+}
+
+form input{
+	border: none;
+}
+
+.your-name,
+.your-email{
+	display: block;
+	width: 80%;
+	padding: 10px 20px;
+	border-radius: 20px;
+	outline: none;
+}
+.your-email{
+	margin-top: 30px;
+}
+.your-name{
+	margin-right: 10px;
+}
+.your-subject{
+	width: 80%;
+	border-radius: 20px;
+	display: block;
+	outline: none;
+	margin: 30px 0px;
+	padding: 10px 20px;
+}
+
+.your-motivo{
+	width: 80%;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.btn-send{
+	margin-top: 30px;
+	border: none;
+	width: 200px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #dc3545;
+	color: white;
+	cursor: pointer;
+	transition: transform .3s ease;
+}
+
+.btn-send:hover{
+	transform: scale(1.05);
 }
