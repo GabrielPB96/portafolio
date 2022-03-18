@@ -7,9 +7,9 @@
 	<title>Portfolio</title>
 </head>
 <body>
-	<div class="container-main">
-		<aside class="container-nav">
-			<div class="nav">
+	<div class="container-main" id="container-menu">
+		<aside class="container-nav" id="container-nav">
+			<div class="nav" id="nav">
 				<div class="info">
 					<div class="container-perfil">
 						<img src="./assets/perfil.png" class="img-perfil"/>
@@ -18,11 +18,11 @@
 				</div>
 				<nav class="menu">
 					<ul>
-						<li class="li-menu"><a href="#container-home"    class="links-menu"><img src="./assets/iconos/home.png" alt="home"> Home</a></li>
-						<li class="li-menu"><a href="#container-about"   class="links-menu"><img src="./assets/iconos/user.png" alt=""> About</a></li>
-						<li class="li-menu"><a href="#container-skills"  class="links-menu"><img src="./assets/iconos/skills.png" alt=""> Skills</a></li>
-						<li class="li-menu"><a href="#container-works"   class="links-menu"><img src="./assets/iconos/freelance.png" alt=""> Works</a></li>
-						<li class="li-menu"><a href="#container-contact" class="links-menu"> <img src="./assets/iconos/phone.png" alt=""> Contact</a></li>
+						<li class="li-menu"><a data-href = "home" class="links-menu"><img src="./assets/iconos/home.png" alt="home"> Home</a></li>
+						<li class="li-menu"><a data-href = "about" class="links-menu"><img src="./assets/iconos/user.png" alt=""> About</a></li>
+						<li class="li-menu"><a data-href = "skills" class="links-menu"><img src="./assets/iconos/skills.png" alt=""> Skills</a></li>
+						<li class="li-menu"><a data-href = "works" class="links-menu"><img src="./assets/iconos/freelance.png" alt=""> Works</a></li>
+						<li class="li-menu"><a data-href = "contact" class="links-menu"> <img src="./assets/iconos/phone.png" alt=""> Contact</a></li>
 					</ul>
 				</nav>
 				<div class="redes-sociales">
@@ -45,7 +45,14 @@
 			</div>
 		</aside>
 		
-		<main class="main">
+		<main class="main" id="main">	
+			<div class="container-btn-menu" id="container-btn-menu">
+				<div class="btn-menu" id="btn-menu">
+					<div class="lines" id="line1"></div>
+					<div class="lines" id="line2"></div>
+					<div class="lines" id="line3"></div>
+				</div>
+			</div>
 			<header class="container-home" id="container-home">
 				<div class="home" id="home">
 					<h1>I'm Gabriel Pantoja<span>.</span></h1>
@@ -56,7 +63,7 @@
 				</div>
 			</header>
 
-			<div class="container-about" id="container-about">
+			<section class="container-about" id="container-about">
 				<div class="about" id="about">
 					<h2>About Me<div></div></h2>
 					<div class="sobre-mi">
@@ -73,7 +80,7 @@
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-
+							<br/>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -85,21 +92,57 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="container-skills" id="container-skills">
+			<section class="container-skills" id="container-skills">
 				<div class="skills" id="skills">
 					<h2>Skills<div></div></h2>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<div class="logos-skills">
+						<figure class="container-logo-skill">
+							<img src="./assets/skills/java.png" alt="">
+							<figcaption class="barra-nivel">
+								<div class="barra" id="java">
+									<span id="porcentaje1">0%</span>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="container-logo-skill">
+							<img src="./assets/skills/python.png" alt="">
+							<figcaption class="barra-nivel">
+								<div class="barra" id="python">
+									<span id="porcentaje2">0%</span>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="container-logo-skill">
+							<img src="./assets/skills/javaScript.png" alt="">
+							<figcaption class="barra-nivel">
+								<div class="barra" id="javascript">
+									<span id="porcentaje3">0%</span>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="container-logo-skill">
+							<img src="./assets/skills/css.png" alt="">
+							<figcaption class="barra-nivel">
+								<div class="barra" id="css">
+									<span id="porcentaje4">0%</span>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="container-logo-skill">
+							<img src="./assets/skills/html.png" alt="">
+							<figcaption class="barra-nivel">
+								<div class="barra" id="html">
+									<span id="porcentaje5">0%</span>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="container-works" id="container-works">
+			<section class="container-works" id="container-works">
 				<div class="works" id="works">
 					<h2>Works<div></div></h2>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -109,9 +152,9 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
-			</div>
+			</section>
 
-			<div class="container-contact" id="container-contact">
+			<section class="container-contact" id="container-contact">
 				<div class="contact" id="contact">
 					<h2>Contact<div></div></h2>
 					<div class="container-campos-form">
@@ -126,7 +169,7 @@
 							
 							<div class="sms-contact">
 								<img src="./assets/iconos/sms3.png" alt="">
-								<p class="parrafo-info">
+								<p class="parrafo-info" id="parrafo-my-email">
 									<span>Email address</span>
 									gabrieljuniorpb990@gmail.com
 								</p>
@@ -140,17 +183,32 @@
 								</p>
 							</div>
 						</div>
-						<form>
-							<input type="text" placeholder="Your Name" class="your-name"/>
-							<input type="email" placeholder="Email address" class="your-email"/>
-							<input type="text" placeholder="Subject" class="your-subject">
-							<textarea rows="5" class="your-motivo"></textarea>
+						<form method="post" action="enviar.php">
+							<label for="">
+								<input type="text" name="name" class="your-name" placeholder=" " autocomplete="off"/>
+								<p class="placeHolderName">Your Name</p>
+							</label>
+							
+							<label for="">
+								<input type="email" name="email" placeholder=" " class="your-email" autocomplete="off"/>
+								<p class="placeHolderEmail">Email</p>
+							</label>
+							
+							<label for="">
+								<input type="text" name="subject" placeholder=" " class="your-subject">
+								<p class="placeHolderSubject">Subject</p>
+							</label>
+							
+							<textarea rows="5" name="sms" class="your-motivo"></textarea>
 							<input type="submit" value="Send Message" class="btn-send">
 						</form>
 					</div>
 				</div>
-			</div>
+			</section>
 		</main>
 	</div>
+	<a href="#main" class="btn-volver-home" id="btn-volver-home"><span></span></a>
+
+	<script src="./script.js" type="module"></script>
 </body>
 </html>
